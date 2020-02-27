@@ -51,6 +51,13 @@ Then('I expect to see {string}', error => {
     expect(alertText).to.include(error);
 });
 
+
+Then('Espero encontrar {string}', h1 => {
+    $('h1').waitForExist(5000);
+    var h1_content = browser.$('h1').getText();
+    expect(h1_content).to.include(h1);
+});
+
 Then('I expect to not be able to login', () => {
     $('.aviso.alert.alert-danger').waitForDisplayed(5000);
 });
