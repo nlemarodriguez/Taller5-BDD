@@ -3,3 +3,4 @@
 /package-lock.json
 /1. Cucumber/node_modules/*
 /1. Cucumber/package-lock.json
+*.apk

@@ -1,0 +1,6 @@
+Para poder que me funcionara Calabash segui la sugerencia de este post:
+    https://github.com/calabash/calabash-android/issues/802
+    Fue necesario instalar RubyZip 1.2.1
+        gem install rubyzip -v 1.2.1 
+    Luego el calabash:
+        gem install calabash-android -v 0.9.8
