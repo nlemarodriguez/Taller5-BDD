@@ -1,6 +1,23 @@
 Para poder que me funcionara Calabash segui la sugerencia de este post:
     https://github.com/calabash/calabash-android/issues/802
+
+    Tuve que desinstalar ruby por el admin de programas y borrar la arpeta del C:/Ruby
+    Volver a instalar pero la version rubyinstaller-devkit-2.5.1-1-x64.exe
     Fue necesario instalar RubyZip 1.2.1
         gem install rubyzip -v 1.2.1 
     Luego el calabash:
         gem install calabash-android -v 0.9.8
+    Luego firmar el apk con el comando:
+        calabash-android resign "C://Users//Nicolas Lema//Desktop//Miso uniandes - no version//Pruebas automaticas//Taller5-BDD//2. Calabash//Transmilenio.apk"
+    Luego correrle el build
+        calabash-android build "C://Users//Nicolas Lema//Desktop//Miso uniandes - no version//Pruebas automaticas//Taller5-BDD//2. Calabash//Transmilenio.apk"
+    Luego correr las pruebas
+        calabash-android run "C://Users//Nicolas Lema//Desktop//Miso uniandes - no version//Pruebas automaticas//Taller5-BDD//2. Calabash//Transmilenio.apk"
+
+Para instalar la app: parado en ../SDK/platform-tools
+    adb install "C://Users//Nicolas Lema//Desktop//Miso uniandes - no version//Pruebas automaticas//Taller5-BDD//2. Calabash//Transmilenio.apk"
+
+Para iniciar un proyecto calabash
+    calabash-android gen
+
+    
